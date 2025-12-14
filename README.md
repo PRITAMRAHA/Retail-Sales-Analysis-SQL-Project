@@ -79,6 +79,8 @@ SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
+<img width="732" height="118" alt="image" src="https://github.com/user-attachments/assets/7ef87bbf-8091-4164-9618-e18f132dae2c" />
+
 
 2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
 ```sql
@@ -88,6 +90,8 @@ WHERE category = 'Clothing'
   AND sale_date BETWEEN '2022-11-01' AND '2022-11-30'
   AND quantity >= 4;
 ```
+<img width="765" height="236" alt="image" src="https://github.com/user-attachments/assets/98eafc84-f5e4-40b2-99e4-f68a2b4befd8" />
+
 
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
 ```sql
@@ -98,6 +102,8 @@ SELECT
 FROM retail_sales
 GROUP BY 1
 ```
+<img width="177" height="109" alt="image" src="https://github.com/user-attachments/assets/3b6876b6-038c-4648-8c07-58d923b276d0" />
+
 
 4. **Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.**:
 ```sql
@@ -107,11 +113,15 @@ FROM retail_sales
 WHERE category = 'Beauty'
 ```
 
+<img width="173" height="95" alt="image" src="https://github.com/user-attachments/assets/d2180c87-73ad-418f-b437-33a7cfe24c37" />
+
+
 5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
 SELECT * FROM retail_sales
 WHERE total_sale > 1000
 ```
+<img width="768" height="234" alt="image" src="https://github.com/user-attachments/assets/12ee6bf1-5338-45ee-9501-d2809ee4443a" />
 
 6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
 ```sql
@@ -126,6 +136,9 @@ GROUP
     gender
 ORDER BY total_trans  desc
 ```
+
+<img width="216" height="156" alt="image" src="https://github.com/user-attachments/assets/13beea58-6203-4b0f-828f-07577bf7ce38" />
+
 
 7. **Write a SQL query to calculate the average sale for each month. Find out best selling month in each year**:
 ```sql
@@ -142,6 +155,8 @@ select
             group by year_,month_)as t
 where rank_ = 1;
 ```
+<img width="290" height="91" alt="image" src="https://github.com/user-attachments/assets/c430bac8-d570-4154-a8dc-9ae407fbf242" />
+
 
 8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
 ```sql
@@ -171,6 +186,7 @@ select
         group by customer_id
         limit 5;
 ```
+<img width="170" height="129" alt="image" src="https://github.com/user-attachments/assets/00d98453-da4d-4559-88f8-3284ce957e7a" />
 
 9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
 ```sql
@@ -181,6 +197,8 @@ select
 
 group by category;
 ```
+<img width="288" height="99" alt="image" src="https://github.com/user-attachments/assets/f82e151c-6931-412e-afaa-861ed8c66192" />
+
 
 10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
 ```sql
@@ -215,6 +233,7 @@ SELECT
 FROM hourly_sale
 GROUP BY shift
 ```
+<img width="264" height="99" alt="image" src="https://github.com/user-attachments/assets/d81cde74-0c55-42e3-949d-cfca71d29e77" />
 
 
 ### **Findings**
