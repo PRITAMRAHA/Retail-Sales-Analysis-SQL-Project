@@ -1,4 +1,5 @@
 ## Retail-Sales-Analysis-SQL-Project
+## By Pritam Raha
 
 ## Project Overview
 
